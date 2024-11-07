@@ -1,7 +1,7 @@
 {
     "name": "kor3k/xml-rpc",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "minimum-stability": "alpha",
     "require": {
         "php": ">=8.3",
