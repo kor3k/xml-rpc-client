@@ -23,8 +23,7 @@ readonly class ResponseParser implements ResponseParserInterface
     {
         $this->denormalizer->options = $options;
 
-        $body = (string) $body;
-        $body = u($body)->trim()->toString();
+        $body = (string) u((string) $body)->trim();
 
         if (empty($body)) {
             return new Response(rawBody: '', params: []);
